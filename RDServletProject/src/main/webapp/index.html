@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function saveData() 
+{
+	
+	var n = document.forms["f"]["n1"].value;
+	  if (n == "") {
+	    alert("Name must be filled out");
+	    return false;
+	  }
+	  
+	  var p = document.forms["f"]["p1"].value;
+	  var ph = p.length;
+	  if (ph != 10) {
+	    alert("Mobile must be 10 digit");
+	    myFocusFunction();
+	    return false;
+	  }
+}  
+function myFocusFunction(){
+	document.getElementById("p1").value = " ";
+}
+	  
+		
+
+</script>
+
+</head>
+<body>
+<form  name="f" onsubmit="return saveData()"  action="FirstServlet" >
+<table border="3"  bgcolor="cyan" align="center">
+<tr>
+  <td colspan="2" bgcolor="yellow" align="center"><marquee>WELCOME</marquee></td>
+</tr>
+<tr><td>Name</td><td><input type="text" name="n" id="n1"></td></tr>
+<tr><td>Phone</td><td><input type="text" name="p" id="p1"></td></tr>
+<tr><td ><input type="submit" value="save"  ></td></tr>
+</table>
+</form>
+
+</body>
+</html>

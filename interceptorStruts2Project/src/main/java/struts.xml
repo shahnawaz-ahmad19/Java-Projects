@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="max" extends="struts-default">
+
+<interceptors>
+<interceptor name="Lgin" class="max.LoginIntercepter"/>
+</interceptors>
+
+<action name="Lgin" class="max.LoginAction">
+<interceptor-ref name="defaultStack"/>
+<interceptor-ref name="Lgin"/>
+<result name="ss">/A.jsp</result>
+<result name="fail">/E.jsp</result>
+</action>
+
+
+</package>
+</struts>    
