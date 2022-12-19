@@ -10,9 +10,9 @@
 <body>
 
 
-Welcome
+Welcome!!
 
-<s:property value="uname"/> 
+<s:property value="uname"/> <!--  OGNL-> it is used to get value stored in stact or actionInvocation-->
 
 
 </body>

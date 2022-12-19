@@ -1,7 +1,5 @@
 package max;
 
-import com.opensymphony.xwork2.ActionSupport;
-
 public class LoginAction {
 String uname;
 String pass;

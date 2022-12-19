@@ -30,7 +30,7 @@ public class CustomIntercepter implements Interceptor{
 		String un = stack.findString("uname");
 		String p = stack.findString("pass");
 		
-		//stack.setValue("uname", un.toUpperCase());
+//		stack.setValue("uname", un.toUpperCase());
 		
 		if(un.equalsIgnoreCase(p))
 		{
