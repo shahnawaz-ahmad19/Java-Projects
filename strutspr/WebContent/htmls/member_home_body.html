@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder - http://www.wysiwygwebbuilder.com">
+<style type="text/css">
+body
+{
+   background-color: #E6E6FA;
+   color: #000000;
+}
+</style>
+<script type="text/javascript" src="./jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.core.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.blind.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.bounce.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.clip.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.drop.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.fold.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.scale.min.js"></script>
+<script type="text/javascript" src="./jquery.effects.slide.min.js"></script>
+<script type="text/javascript" src="./wb.slideshow.js"></script>
+<style type="text/css">
+#NavigationBar1 ul.navbar
+{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#NavigationBar1 ul.navbar li
+{
+   height: 25px;
+   width: 140px;
+   margin: 0px 0px 25px 0px;
+   vertical-align: bottom;
+}
+#NavigationBar1 ul.navbar li a
+{
+   display: block;
+   position: relative;
+}
+#NavigationBar1 ul.navbar li a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0px;
+}
+#NavigationBar1 ul.navbar li span
+{
+   display: block;
+   height: 25px;
+   width: 140px;
+   position: absolute;
+   z-index: 2;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   $("#NavigationBar1 .navbar a").hover(function()
+   {
+      $(this).children("span").hide();
+   }, function()
+   {
+      $(this).children("span").show();
+   })
+   $("#SlideShow1").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 2000
+   });
+   $("#SlideShow2").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      effectlength: 2000
+   });
+});
+</script>
+</head>
+<body>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><br></a>
+<div id="NavigationBar1" style="position:absolute;left:290px;top:190px;width:140px;height:300px;z-index:1">
+<ul class="navbar">
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0017_over.gif"><span><img alt="" src="images/img0017.gif"></span></a></li>
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0018_over.gif"><span><img alt="" src="images/img0018.gif"></span></a></li>
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0015_over.gif"><span><img alt="" src="images/img0015.gif"></span></a></li>
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0016_over.gif"><span><img alt="" src="images/img0016.gif"></span></a></li>
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0014_over.gif"><span><img alt="" src="images/img0014.gif"></span></a></li>
+<li><a href="C:\Users\SURYA\Desktop\1.html"><img alt="" src="images/img0013_over.gif"><span><img alt="" src="images/img0013.gif"></span></a></li>
+</ul>
+</div>
+
+<br><br><div id="wb_Image3" style="margin: 0pt; padding: 0pt; position: absolute; left: 40px; top: 228px; width: 150px; height: 240px; text-align: left; z-index: 4;">
+<img src="images/hospital.jpg" id="Image3" alt="" border="0" style="width:150px;height:240px;"></div><br></body>
+</html>

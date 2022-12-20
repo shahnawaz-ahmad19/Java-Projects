@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+   <constant name="struts.devMode" value="true" />
+   <constant name="struts.multipart.maxSize" value="1000000" />
+   
+	
+	<package name="p1" extends="tiles-default">
+	<global-results>
+	<result name="exception" type="tiles">exception</result>
+	</global-results>
+	
+   <action name="homeDispatch" class="action.dispatch.DispatchAction" method="home">
+ 		<result name="home" type="tiles">home</result> 
+	</action>
+	<action name="registerDispatch" class="action.dispatch.DispatchAction" method="register">
+ 		<result name="register" type="tiles">register</result> 
+	</action>
+
+	<action name="loginDispatch" class="action.dispatch.DispatchAction" method="login">
+ 		<result name="login" type="tiles">login</result> 
+	</action>
+
+
+	<action name="forgotDispatch" class="action.dispatch.DispatchAction" method="forgot">
+ 		<result name="forgot" type="tiles">forgot</result> 
+	</action>
+
+	<action name="serviceDispatch" class="action.dispatch.DispatchAction" method="service">
+ 		<result name="service" type="tiles">service</result> 
+	</action>
+
+	<action name="vaccinfoDispatch" class="action.dispatch.DispatchAction" method="vaccinfo">
+ 		<result name="vaccinfo" type="tiles">vaccinfo</result> 
+	</action>
+
+	<action name="contactDispatch" class="action.dispatch.DispatchAction" method="contact">
+ 		<result name="contact" type="tiles">contact</result> 
+	</action>
+
+
+
+
+	<action name="home2">
+ 		<result type="tiles">home</result>
+ 	</action>
+ 	
+ 	<action name="check" class="action.dao.AjaxAction">
+ 		<result>AjaxResponse.jsp</result>
+ 		
+ 	</action>
+ 	
+ 	<action name="getPassAction" class="action.dao.ForgotPassword">
+ 		<result name="success" type="tiles">getPass</result>
+ 	</action>
+ 	
+ 	<action name="uploadPhoto" class="action.dispatch.DispatchAction" method="uploadPhoto">
+       <result name="uploadPhoto" type="tiles">uploadPhoto</result>
+       <result name="error">/error.jsp</result>
+   </action>
+ 	
+ 	
+ 	<action name="download">
+ 		<result>/download</result>
+ 	</action>
+	
+
+	<action name="loginAction" class="action.dao.LoginAction">
+ 		<result name="user_success" type="tiles">user_login_success2</result>
+ 		<result name="admin_success" type="tiles" >admin_success</result>
+ 		<result name="fail" type="tiles">login_fail</result>	
+	</action>
+		
+	<action name="registerAction" class="action.dao.RegisterAction">
+ 		<result name="succ" type="tiles">register_success_body1</result>
+ 		<result name="fail" type="tiles">register_fail</result>	
+	</action>
+	
+	<action name="register_success_body1">
+ 		<result type="tiles">register_success_body1</result>
+ 			</action>
+	
+	<action name="user_login_success2_action">
+ 		<result name="success" type="tiles">user_login_success2</result>
+ 	</action>
+		
+	<action name="admin_login_success2_action">
+ 		<result name="success" type="tiles">admin_login_success2</result>
+ 	</action>
+ 	
+ 	
+ 	 	<action name="memberZone" class="action.dao.MemberZoneAction">
+ 		<result name="success" type="tiles">memberZone</result>
+ 	</action>
+ 	 	<action name="vaccineZone">
+ 		<result type="tiles">vaccineZone</result>
+ 	</action>
+ 
+    <action name="addVaccInfo">
+ 		<result type="tiles">addVaccInfo</result>
+ 	</action>
+ 	
+ 	<action name="viewVaccInfo" class="action.dao.ViewVaccInfo">
+ 		<result type="tiles">viewVaccInfo</result>
+ 	</action>
+ 	
+   <action name="addVaccAction" class="action.dao.AddVaccineAction">
+ 		<result type="tiles">jsps/add_vacc_action_body1.jsp</result>
+ 	</action>
+ 
+ 	<action name="deleteVacc" class="action.dao.DeleteVaccineAction">
+ 		<result type="tiles">jsps/delete_vacc_action_body.jsp</result>
+ 	</action>
+ 	
+  <action name="viewProfile" class="action.dao.ViewProfileAction">
+ 		<result name="success" type="tiles">view_profile_body</result>
+ 	</action>
+  
+  <action name="upload" class="action.dao.UploadFile">
+ 		<result name="success" type="tiles">uploadPhotoS</result>
+ 	</action>
+  
+  
+  <action name="updateProfile" class="action.dao.UpdateProfileAction">
+ 		<result name="success" type="tiles">updateProfile</result>
+ 	</action>
+ 	<action name="viewChildInfo" class="action.dao.ViewChildInfoAction">
+ 		<result name="success" >view_child_info_body</result>
+ 	</action>
+ 	<action name="addChildInfo" class="action.dao.GenerateChildId">
+ 		<result name="success" type="tiles">add_child_info_body</result>
+ 	</action>
+ 	
+ 	<action name="addChild" class="action.dao.AddChildAction">
+ 		<result name="success" type="tiles">addChild</result>
+ 	</action>
+ 	
+ 	<action name="updateChildSchedule">
+ 		<result type="tiles">updateChildSchedule</result>
+ 	</action>
+ 	
+ 	<action name="updateVaccSchedule" class="action.dao.UpdateVaccSchedule">
+ 		<result name="success" >jsps/user_login_success1.jsp</result>
+ 		<result name="exist">jsps/user_login_success1.jsp</result>
+ 	</action>
+ 	
+ 	<action name="manageAlerts">
+ 		<result type="tiles">manageAlerts</result>
+ 	</action>
+ 	
+ 	<action name="updateAlert" class="action.dao.UpdateAlertAction">
+ 		<result name="success">jsps/user_login_success1.jsp</result>
+ 		<result name="fail">jsps/user_login_success1.jsp</result>
+ 	</action>
+
+	<action name="viewSchedule" class="action.dao.ViewScheduleAction">
+ 		<result name="success" type="tiles">updateSchedule</result>
+ 		<result name="fail" type="tiles">updateChildSchedule</result>
+ 	</action>
+
+ </package>
+</struts>    

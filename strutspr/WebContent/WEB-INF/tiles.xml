@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+<definition name="baseLayout" template="/jsps/layout.jsp">
+    <!--  <put-attribute name="title"  value="Template"/> -->
+	  <put-attribute name="header" value="/htmls/header.jsp"/>
+      <!-- <put-attribute name="menu"   value="/jsps/menu.jsp"/> -->
+      <put-attribute name="body"   value=""/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+      
+ </definition>
+
+  <definition name="register" extends="baseLayout">
+      <put-attribute name="body"   value="/htmls/registration_body.html"/>
+  </definition>
+  
+  <definition name="login" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/login_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="forgot" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/htmls/forgot_body.html"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+
+<definition name="register_success_body1" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/register_success_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+<definition name="updateProfile" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_user_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  <definition name="register_fail" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/register_fail_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>  
+
+  <definition name="user_login_success2" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_user_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  <definition name="admin_login_success2" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_admin_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="login_fail" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/login_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  
+  <definition name="home" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/htmls/home_body.html"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="service" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/htmls/services_body.html"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="vaccinfo" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/vaccinfo_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="contact" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/contact_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  <definition name="getPass" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/recover_pass_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="view_profile_body" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_profile_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="view_child_info_body" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_child_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  
+  
+  <definition name="uploadPhoto" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_user_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  <definition name="uploadPhotoS" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/fileUplaod.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="view_child_info_body" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_child_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="add_child_info_body" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/add_child_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="add_child_info_body" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="jsps/welcome_user_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  
+  
+  
+  
+  <definition name="fileUpload" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_user_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="memberZone" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/member_zone_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="vaccineZone" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/vaccine_zone_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  <definition name="addVaccInfo" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/add_vacc_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="viewVaccInfo" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_vacc_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  <definition name="exception" template="/jsps/layout.jsp">
+      <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/exception_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="addVaccAction" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/add_vacc_action_body1.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="viewProfile" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_profile_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  
+  <definition name="addChildInfo" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/add_child_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="viewChildInfo" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/view_child_info_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+
+<definition name="updateChildSchedule" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/update_child_schedule_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="manageAlerts" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/manage_alerts_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="updateSchedule" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/update_schedule_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  <definition name="admin_success" template="/jsps/layout.jsp">
+    <put-attribute name="header" value="/htmls/header.jsp"/>
+      <put-attribute name="body"   value="/jsps/welcome_admin_body.jsp"/>
+      <put-attribute name="footer"   value="/htmls/footer.html"/>
+  </definition>
+  
+  
+  
+  
+  
+</tiles-definitions>

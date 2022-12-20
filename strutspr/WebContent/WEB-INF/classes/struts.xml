@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="p1" extends="tiles-default">
+	<global-results>
+	<result name="exception" type="tiles">exception</result>
+	</global-results>
+	
+	
+	
+	<action name="Dispatch" class="action.dispatch.DispatchAction" method="register">
+ 		<result name="register" type="tiles">register</result>
+ 		<result name="home">jsps/home1.jsp</result>
+ 		<result name="service" type="tiles">service</result>
+ 		<result name="vaccinfo" type="tiles">vaccinfo</result>
+ 		<result name="contact" type="tiles">contact</result>
+ 		<result name="login" type="tiles">login</result>
+ 		<result name="forgot" type="tiles">forgot</result>
+	</action>
+
+	<action name="home2">
+ 		<result type="tiles">home</result>
+ 	</action>
+ 	
+ 	<action name="check" class="action.dao.AjaxAction">
+ 		<result>AjaxResponse.jsp</result>
+ 		
+ 	</action>
+ 	
+ 	<action name="getPassAction" class="action.dao.ForgotPassword">
+ 		<result type="tiles">getPass</result>
+ 	</action>
+ 	
+ 	<action name="download">
+ 		<result>/download</result>
+ 	</action>
+	
+
+	<action name="loginAction" class="action.dao.LoginAction">
+ 		<result name="user_success">jsps/user_login_success1.jsp</result>
+ 		<result name="admin_success">jsps/admin_login_success1.jsp</result>
+ 		<result name="fail" type="tiles">login_fail</result>	
+	</action>
+		
+	<action name="registerAction" class="action.dao.RegisterAction">
+ 		<result name="success">jsps/register_success_body.jsp</result>
+ 		<result name="fail" type="tiles">register_fail</result>	
+	</action>
+	
+	<action name="register_success_body1">
+ 		<result type="tiles">register_success_body1</result>
+ 			</action>
+	
+	<action name="user_login_success2_action">
+ 		<result name="success" type="tiles">user_login_success2</result>
+ 	</action>
+		
+	<action name="admin_login_success2_action">
+ 		<result name="success" type="tiles">admin_login_success2</result>
+ 	</action>
+ 	
+ 	
+ 	 	<action name="memberZone" class="action.dao.MemberZoneAction">
+ 		<result name="success" type="tiles">memberZone</result>
+ 	</action>
+ 	 	<action name="vaccineZone">
+ 		<result type="tiles">vaccineZone</result>
+ 	</action>
+ 
+    <action name="addVaccInfo">
+ 		<result type="tiles">addVaccInfo</result>
+ 	</action>
+ 	
+ 	<action name="viewVaccInfo" class="action.dao.ViewVaccInfo">
+ 		<result type="tiles">viewVaccInfo</result>
+ 	</action>
+ 	
+   <action name="addVaccAction" class="action.dao.AddVaccineAction">
+ 		<result>jsps/add_vacc_action_body1.jsp</result>
+ 	</action>
+ 
+ 	<action name="deleteVacc" class="action.dao.DeleteVaccineAction">
+ 		<result>jsps/delete_vacc_action_body.jsp</result>
+ 	</action>
+ 	
+  <action name="viewProfile" class="action.dao.ViewProfileAction">
+ 		<result type="tiles">viewProfile</result>
+ 	</action>
+  
+  <action name="updateProfile" class="action.dao.UpdateProfileAction">
+ 		<result>jsps/user_login_success1.jsp</result>
+ 	</action>
+ 	<action name="viewChildInfo" class="action.dao.ViewChildInfoAction">
+ 		<result type="tiles">viewChildInfo</result>
+ 	</action>
+ 	<action name="addChildInfo" class="action.dao.GenerateChildId">
+ 		<result type="tiles">addChildInfo</result>
+ 	</action>
+ 	
+ 	<action name="addChild" class="action.dao.AddChildAction">
+ 		<result>jsps/user_login_success1.jsp</result>
+ 	</action>
+ 	
+ 	<action name="updateChildSchedule">
+ 		<result type="tiles">updateChildSchedule</result>
+ 	</action>
+ 	
+ 	<action name="updateVaccSchedule" class="action.dao.UpdateVaccSchedule">
+ 		<result>jsps/user_login_success1.jsp</result>
+ 		<result name="exist">jsps/user_login_success1.jsp</result>
+ 	</action>
+ 	
+ 	<action name="manageAlerts">
+ 		<result type="tiles">manageAlerts</result>
+ 	</action>
+ 	
+ 	<action name="updateAlert" class="action.dao.UpdateAlertAction">
+ 		<result name="success">jsps/user_login_success1.jsp</result>
+ 		<result name="fail">jsps/user_login_success1.jsp</result>
+ 	</action>
+
+	<action name="viewSchedule" class="action.dao.ViewScheduleAction">
+ 		<result name="success" type="tiles">updateSchedule</result>
+ 		<result name="fail" type="tiles">updateChildSchedule</result>
+ 	</action>
+
+ </package>
+</struts>    

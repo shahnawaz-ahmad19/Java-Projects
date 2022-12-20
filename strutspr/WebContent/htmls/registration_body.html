@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder - http://www.wysiwygwebbuilder.com">
+<style type="text/css">
+body
+{
+   background-color: #E6E6FA;
+   color: #000000;
+}
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function ValidateForm1(theForm)
+{
+  
+   if (theForm.Editbox1.value == "")
+   {
+      alert("Please enter a value for the \"father name\" field.");
+      theForm.Editbox1.focus();
+      return false;
+   }
+   if (theForm.Editbox1.value.length < 1)
+   {  
+      alert("Please enter at least 1 characters in the \"father name\" field.");
+      theForm.Editbox1.focus();
+      return false;
+   }
+   if (theForm.Editbox1.value.length > 60)
+   {
+      alert("Please enter at most 60 characters in the \"father name\" field.");
+      theForm.Editbox1.focus();
+      return false;
+   }
+  
+   if (theForm.Editbox2.value == "")
+   {
+      alert("Please enter a value for the \"mother name\" field.");
+      theForm.Editbox2.focus();
+      return false;
+   }
+   if (theForm.Editbox2.value.length < 1)
+   {
+      alert("Please enter at least 1 characters in the \"mother name\" field.");
+      theForm.Editbox2.focus();
+      return false;
+   }
+   if (theForm.Editbox2.value.length > 60)
+   {
+      alert("Please enter at most 60 characters in the \"mother name\" field.");
+      theForm.Editbox2.focus();
+      return false;
+   }
+   if (theForm.Editbox3.value == "")
+   {
+      alert("Please enter a value for the \"username\" field.");
+      theForm.Editbox3.focus();
+      return false;
+   }
+   if (theForm.Editbox3.value.length < 2)
+   {
+      alert("Please enter at least 2 characters in the \"username\" field.");
+      theForm.Editbox3.focus();
+      return false;
+   }
+   if (theForm.Editbox3.value.length > 50)
+   {
+      alert("Please enter at most 50 characters in the \"username\" field.");
+      theForm.Editbox3.focus();
+      return false;
+   }
+   if (theForm.Editbox4.value == "")
+   {
+      alert("Please enter a value for the \"password\" field.");
+      theForm.Editbox4.focus();
+      return false;
+   }
+   if (theForm.Editbox4.value.length < 4)
+   {
+      alert("Please enter at least 4 characters in the \"password\" field.");
+      theForm.Editbox4.focus();
+      return false;
+   }
+   if (theForm.Editbox4.value.length > 30)
+   {
+      alert("Please enter at most 10 characters in the \"password\" field.");
+      theForm.Editbox4.focus();
+      return false;
+   }
+   if (theForm.Editbox5.value == "")
+   {
+      alert("Please enter a value for the \"reenter password\" field.");
+      theForm.Editbox5.focus();
+      return false;
+   }
+   if (theForm.Editbox5.value.length < 4)
+   {
+      alert("Please enter at least 4 characters in the \"reenter password\" field.");
+      theForm.Editbox5.focus();
+      return false;
+   }
+   if (theForm.Editbox5.value.length > 30)
+   {
+      alert("Please enter at most 10 characters in the \"reenter password\" field.");
+      theForm.Editbox5.focus();
+      return false;
+   }
+   if (theForm.Editbox5.value != theForm.Editbox4.value)
+   {
+      alert("password and confirm password must be identical");
+      theForm.Editbox5.focus();
+      return false;
+   }
+   regexp = /^[-+]?\d*\.?\d*$/;
+   if (!regexp.test(theForm.Editbox6.value))
+   {
+      alert("Please enter only digit characters in the \"mobile number\" field.");
+      theForm.Editbox6.focus();
+      return false;
+   }
+   if (theForm.Editbox6.value == "")
+   {
+      alert("Please enter a value for the \"mobile number\" field.");
+      theForm.Editbox6.focus();
+      return false;
+   }
+   if (theForm.Editbox6.value.length < 10)
+   {
+      alert("Please enter at least 10 characters in the \"mobile number\" field.");
+      theForm.Editbox6.focus();
+      return false;
+   }
+   if (theForm.Editbox6.value.length > 11)
+   {
+      alert("Please enter at most 11 characters in the \"mobile number\" field.");
+      theForm.Editbox6.focus();
+      return false;
+   }
+   regexp = /^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i;
+   if (!regexp.test(theForm.Editbox7.value))
+   {
+      alert("Please enter a valid email address.");
+      theForm.Editbox7.focus();
+      return false;
+   }
+   if (theForm.Editbox7.value == "")
+   {
+      alert("Please enter a value for the \"email-id\" field.");
+      theForm.Editbox7.focus();
+      return false;
+   }
+   if (theForm.Editbox7.value.length < 10)
+   {
+      alert("Please enter at least 10 characters in the \"email-id\" field.");
+      theForm.Editbox7.focus();
+      return false;
+   }
+   if (theForm.Editbox7.value.length > 40)
+   {
+      alert("Please enter at most 40 characters in the \"email-id\" field.");
+      theForm.Editbox7.focus();
+      return false;
+   }
+   if (theForm.TextArea1.value == "")
+   {
+      alert("Please enter a value for the \"address\" field.");
+      theForm.TextArea1.focus();
+      return false;
+   }
+   if (theForm.TextArea1.value.length < 1)
+   {
+      alert("Please enter at least 1 characters in the \"address\" field.");
+      theForm.TextArea1.focus();
+      return false;
+   }
+   if (theForm.TextArea1.value.length > 200)
+   {
+      alert("Please enter at most 200 characters in the \"address\" field.");
+      theForm.TextArea1.focus();
+      return false;
+   }
+   
+   
+   return true;
+}
+//-->
+
+
+function ajaxFunction()
+{
+var xmlHttp,name;
+try
+{
+// Firefox, Opera 8.0, Safari
+xmlHttp=new XMLHttpRequest();
+}
+catch (e)
+{
+// Internet Explorer
+	try
+	{
+	xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	catch (e)
+	{
+		try
+		{
+		xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		catch (e)
+		{
+		return false;
+		}
+	}
+}
+xmlHttp.onreadystatechange=function()
+{
+if(xmlHttp.readyState==4)
+	{
+	 name = document.getElementById('Editbox3').value;
+	 alert("name "+name);
+	document.getElementById('check').innerHTML = " <I/><font color='red' size='4'>" + xmlHttp.responseText + "</font>";
+	}
+}
+
+		var url = "jsps/check.jsp?name="+document.getElementById('Editbox3').value;
+		xmlHttp.open("GET",url,true);
+		xmlHttp.send(null);
+}
+
+</script>
+</head>
+<body>
+<div id="wb_Form1" style="position: absolute; background-color: rgb(225, 230, 240); left: 306px; top: 169px; width: 374px; height: 354px; z-index: 18;">
+<form name="Form1" method="post" action="registerAction" enctype="application/x-www-form-urlencoded" id="Form1" onsubmit="return ValidateForm1(this)">
+<div id="wb_Text1" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 10px; width: 86px; height: 16px; text-align: left; z-index: 0;">
+<font style="font-size:14px" color="#003399" face="Arial">Father Name</font></div>
+<div id="wb_Text2" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 40px; width: 85px; height: 16px; text-align: left; z-index: 1;">
+<font style="font-size:14px" color="#003399" face="Arial">Mother Name</font></div>
+<div id="wb_Text3" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 70px; width: 70px; height: 16px; text-align: left; z-index: 2;">
+<font style="font-size:14px" color="#003399" face="Arial">UserName</font></div>
+<div id="wb_Text4" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 100px; width: 72px; height: 16px; text-align: left; z-index: 3;">
+<font style="font-size:14px" color="#003399" face="Arial">Password</font></div>
+<div id="wb_Text5" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 130px; width: 120px; height: 16px; text-align: left; z-index: 4;">
+<font style="font-size:14px" color="#003399" face="Arial">Reenter Password</font></div>
+<div id="wb_Text6" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 160px; width: 79px; height: 16px; text-align: left; z-index: 5;">
+<font style="font-size:14px" color="#003399" face="Arial">Mobile No</font></div>
+<div id="wb_Text7" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 190px; width: 66px; height: 16px; text-align: left; z-index: 6;">
+<font style="font-size:14px" color="#003399" face="Arial">Email-Id</font></div>
+<div id="wb_Text8" style="margin: 0pt; padding: 0pt; position: absolute; left: 10px; top: 220px; width: 59px; height: 16px; text-align: left; z-index: 7;">
+<font style="font-size:14px" color="#003399" face="Arial">Address</font></div>
+<input type="text" id="Editbox1" style="border: 1px solid rgb(192, 192, 192); position: absolute; left: 200px; top: 10px; width: 130px; height: 22px; background-color: rgb(255, 255, 255);  font-family: Arial; font-size: 13px; z-index: 8;" name="fathername" value="">
+<input type="text" id="Editbox2" style="border: 1px solid rgb(192, 192, 192); position: absolute; left: 200px; top: 40px; width: 130px; height: 22px; background-color: rgb(255, 255, 255);  font-family: Arial; font-size: 13px; z-index: 9;" name="mothername" value="">
+<input type="text" id="Editbox3" style="position:absolute;left:200px;top:70px;width:130px;height:22px;border:1px #C0C0C0 solid;font-family:Arial;font-size:13px;z-index:10" name="username" value="" onblur="ajaxFunction();">
+<div id="check" style="position:absolute;left:332px;top:70px;width:130px;height:22px;"></div>
+<input type="password" id="Editbox4" style="position:absolute;left:200px;top:100px;width:130px;height:22px;border:1px #C0C0C0 solid;background-color:;font-family:Arial;font-size:13px;z-index:11" name="pass" value="">
+<input type="password" id="Editbox5" style="position:absolute;left:200px;top:130px;width:130px;height:22px;border:1px #C0C0C0 solid;background-color:;font-family:Arial;font-size:13px;z-index:12" name="repass" value="">
+<input type="text" id="Editbox6" style="position:absolute;left:200px;top:160px;width:130px;height:22px;border:1px #C0C0C0 solid;background-color:font-family:Arial;font-size:13px;z-index:13" name="mob" value="">
+<input type="text" id="Editbox7" style="position:absolute;left:200px;top:190px;width:130px;height:22px;border:1px #C0C0C0 solid;background-color:font-family:Arial;font-size:13px;z-index:14" name="email" value="">
+<textarea name="address" id="TextArea1" style="position:absolute;left:200px;top:220px;width:130px;height:75px;border:1px #C0C0C0 solid;background-color:font-family:Arial;font-size:13px;z-index:15" rows="5" cols="27"></textarea>
+<div id="wb_Text7" style="margin: 0pt; padding: 0pt; position: absolute; left: 16px; top: 290px; width: 88px; height: 16px; text-align: left; z-index: 9;">
+<font style="font-size:14px" color="#003399" face="Arial"><a href="loginDispatch">Login </a></font></div>
+
+
+<input type="submit" id="Button1" name="" value="Register" style="position:absolute;left:225px;top:310px;;font-family:Arial;font-weight:;font-size:13px;z-index:16">
+
+</form>
+</div>
+</body>
+</html>
